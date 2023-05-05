@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mainscreen {
+    width: 950px;
+    margin: 0 auto;
+   
+}
+.mainscreen-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 100px 0 30px;
+}
+.layout {
+    width: 950px;
+    margin: 0 auto;
+}
+.mainscreen-info div {
+    transform: rotate(270deg);
+    margin-bottom: 30px;
+    margin-right: -20px;
+}
+.mainscreen-info-lang a {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    text-align: left;
+    color: #828282;
+}
+.mainscreen-info-lang > .active {
+color: black;
+}
+.section-about, .section-portfolio {
+    background: #F6F6F6;
+}
+.about {
+    text-align: center;
+    padding: 120px 0 107px;
+}
+.about-info p {
+    margin: 17px 0;
+}
+.skills-programs {
+display: flex;
+justify-content: space-between;
+}
+.skills h2, .skills p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.skills {
+    padding: 50px;
+}
+.skills-programs-element{
+    text-align: center;
+}
+.skills-programs-element p{
+margin: 20px;
+}
+    .section-portfolio-item {
+display: flex;
+flex-direction: column;
+gap: 50px;
+text-align: center;
+margin-bottom: 50px;
+    }
+.section-portfolio-item a{
+color: black;
+}
+.mainscreen-image-mobile{
+    display: none;
+}
+.menu{
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+}
+.menu-items{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #828282;
+    padding: 15px 0px;
+}
+.menu a{
+    color: #828282;
+    text-decoration: none;
+}
+
+
+@media (max-width: 450px) {
+     
+    
+    .mainscreen-image-full {
+        display: none;
+    }
+    .mainscreen-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding-top: 50px;
+    }
+    .layout, .mainscreen {
+        width: 80%;
+        
+    }
+    .mainscreen-info-lang {
+        display: none;
+    }
+    .mainscreen-image-mobile {
+        display: block;
+    }
+.skills-programs {
+    flex-direction: column;
+    gap: 35px;
+}
+.menu{
+    display: none;
+}
+.menu-button{
+    width: 35px;
+    height: 19px;
+    position: fixed;
+    right: 50px;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 51;
+}
+.menu-button div{
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+}
+.menu-media{
+    background-color: #fff;
+width: 100%;
+height: 100vh;
+position: fixed;
+z-index: 50;
+padding: 66px 0 0 26px;
+}
+.menu-media a {
+    text-decoration: none;
+    color: #828282;
+    font-size: 34px;
+    font-weight: 600;
+}
+.menu-media ul {
+    list-style: none;
+}
+.menu-media ul li {
+    margin-bottom: 68px;
+   
+}
+.menu-media-lang {
+    position: absolute;
+    right: 40px;
+    bottom: 95px;
+    transform: rotate(90deg);
+}

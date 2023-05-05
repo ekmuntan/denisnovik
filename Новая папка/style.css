@@ -1,0 +1,26 @@
+.mainscreen-image
+{
+    background-image: url(./image/Rectangle\ 30.png);
+
+}
+.mainscreen-image
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.food
+{
+   background-color: grey;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 7%;
+  
+}
+.food > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mainscreen-image
